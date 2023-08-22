@@ -2,10 +2,7 @@ import './styles.css';
 
 import FlatPicker from 'react-flatpickr';
 
-
-
 function Filter() {
-
   const onChangeDate = (dates: Date[]) => {
     console.log(dates);
   };
@@ -19,9 +16,10 @@ function Filter() {
         }}
         className="filter-input"
         onChange={onChangeDate}
-        placeholder="Selecione um período" />
+        placeholder="Selecione um período"
+      />
     </div>
-  )
+  );
 }
 
 export default Filter;
