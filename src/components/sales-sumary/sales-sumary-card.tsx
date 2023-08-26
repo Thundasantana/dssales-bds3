@@ -12,7 +12,7 @@ function SalesSumaryCard({ value, label, icon }: Props) {
     <div className="sales-sumary-card base-card">
       {icon}
       <h3 className="sales-sumary-card-value">{value}</h3>
-      <span className="sales-sumary-card-label"></span>
+      <span className="sales-sumary-card-label">{label}</span>
     </div>
   );
 }
