@@ -2,19 +2,19 @@ import './styles.css';
 import React from 'react';
 
 type Props = {
-  value: number;
+  value: number | string;
   label: string;
   icon: React.ReactNode;
 };
 
-function SalesSumaryCard({ value, label, icon }: Props) {
+function SalesSummaryCard({ value, label, icon }: Props) {
   return (
-    <div className="sales-sumary-card base-card">
+    <div className="sales-summary-card base-card">
       {icon}
-      <h3 className="sales-sumary-card-value">{value}</h3>
-      <span className="sales-sumary-card-label">{label}</span>
+      <h3 className="sales-summary-card-value">{value}</h3>
+      <span className="sales-summary-card-label">{label}</span>
     </div>
   );
 }
 
-export default SalesSumaryCard;
+export default SalesSummaryCard;
